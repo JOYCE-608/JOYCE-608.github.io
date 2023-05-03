@@ -1,0 +1,19 @@
+.img{
+position: 200px; 
+height: 10px;
+
+}
+
+.header-top{
+    background-color: #555;
+}
+
+.header-top>h1,h2{
+    color: #fff;
+}
+.header-bottom{
+    background-color: blue;
+}
+.header-bottom{
+    background-color: #fff;
+}

@@ -1,0 +1,44 @@
+
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <link type="stylesheet" href="index.html">
+     <link type="stylesheet"href="index.css">
+
+    <title>Document</title>
+</head>
+
+<body style="background-color: rgb(169, 180, 180);">
+    <body style="background-image: C\Users\user\Downloads\primary-school-buildings-bags-corridors-johannesburg-south-africa-february-123190805jpg;">
+        
+    </body>
+    <h3>Write your comment </h3>
+   
+    <form name="myForm" action="" method="POST">
+        {% csrf_token %}
+       
+        {{context.comment.as_p }}
+    
+        <button type="submit" style="cursor: pointer;">Submit</button>  
+    </form>  
+    <button type="comments"  style="position: pointer;">comment</button>
+    
+    
+
+    <script type="text/javascript">
+
+    </script>
+    <div>
+        <div>
+            {% for comment in context.all_comments %}
+                <p style ="color: black;">{{ comment.textfield }}</p>
+            {% endfor %}
+        </div>
+    </div>
+    
+</body>
+</html>
